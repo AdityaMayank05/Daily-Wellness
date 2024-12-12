@@ -24,9 +24,9 @@ const Register = () => {
   };
 
   return (
-    <div className="max-w-md mx-auto mt-20 p-6 border border-gray-300 rounded-lg shadow-lg bg-[#b3fffb]">
-      <h1 className="text-2xl font-bold text-center text-blue-600">Welcome to DailyWellness!</h1>
-      <Link to="/login" className="block text-center mt-2 text-blue-500 hover:underline">Already have an account? Login here</Link>
+    <div className="max-w-md mx-auto mt-20 p-6 border border-gray-300 rounded-lg shadow-lg bg-white">
+      <h1 className="text-2xl font-bold text-center text-black">Welcome to DailyWellness!</h1>
+      <Link to="/login" className="block text-center mt-2 text-black hover:underline">Already have an account? Login here</Link>
       <h2 className="text-xl font-semibold text-center text-gray-800 mt-4">Sign Up</h2>
       <form onSubmit={handleSubmit} className="flex flex-col mt-4">
         <div className="mb-4">
