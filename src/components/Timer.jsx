@@ -1,7 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
+import { useNavigate } from 'react-router-dom';
 
 function Timer() {
+  const navigate = useNavigate();
+
+  const handleButtonClick = () => {
+    navigate('/register');
+  };
   const [countdown, setCountdown] = useState(null);
 
   useEffect(() => {
@@ -87,7 +93,7 @@ function Timer() {
         )}
       </div>
       <div className="text-center mt-4 pb-6">
-        <button className="bg-yellow-400 hover:bg-yellow-500 text-black font-bold py-2 px-4 rounded-2xl">
+        <button onClick={handleButtonClick} className="bg-yellow-400 hover:bg-yellow-500 text-black font-bold py-2 px-4 rounded-2xl">
           Sign Up to Get Early Access
         </button>
       </div>
