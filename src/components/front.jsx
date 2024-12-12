@@ -15,7 +15,7 @@ const Front = () => {
     <div className="border-b border-neutral-900 pb-4 lg:mb-35 relative">
       <div className="flex flex-col items-center w-full pt-6">
         <motion.div
-          className="absolute top-6 text-3xl font-bold text-black z-50 p-2 rounded" // Ensure high z-index, change color to black, add background for contrast
+          className="absolute top-6 text-3xl font-bold text-black z-50 p-2 rounded pb-10" // Ensure high z-index, change color to black, add background for contrast
           style={{
             whiteSpace: 'nowrap',
             left: 0, 
@@ -24,7 +24,7 @@ const Front = () => {
             x: [0, 1500], 
           }}
           transition={{
-            duration: 5, 
+            duration: 10, 
             repeat: Infinity, 
             repeatType: 'loop',
           }}

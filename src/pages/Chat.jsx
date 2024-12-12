@@ -19,22 +19,24 @@ const ChatPage = () => {
 
   return (
     <div className="flex flex-col h-screen bg-gray-100">
-      
+      {/* Top Bar */}
       <div className="bg-blue-500 text-white text-center py-4">
         <h1 className="text-2xl font-bold">Daily Wellness AI</h1>
       </div>
 
-      <div className="flex-1 p-4 overflow-auto">
+      {/* Messages Container */}
+      <div className="flex-1 p-2 sm:p-4 overflow-auto">
         {messages.map((message, index) => (
-          <div key={index} className="my-2 flex justify-end">
-            <div className="bg-blue-500 text-white rounded-lg p-2 w-fit max-w-xs">
+          <div key={index} className="my-1 sm:my-2 flex justify-end">
+            <div className="bg-blue-500 text-white rounded-lg p-2 max-w-[80%] sm:max-w-xs">
               {message}
             </div>
           </div>
         ))}
       </div>
 
-      <div className="border-t border-gray-300 p-4">
+      {/* Input Container */}
+      <div className="border-t border-gray-300 p-2 sm:p-4">
         <div className="flex">
           <input
             type="text"
